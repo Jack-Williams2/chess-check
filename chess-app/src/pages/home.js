@@ -61,7 +61,7 @@ export default function Album() {
               Chess Website
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              This is a small project, mainly to just refresh some skills I have been working on throughout my studies, however enjoy
+              This is a small project, mainly to just refresh some skills I have been working on throughout my studies (More around auto-deployment and CI/CD etc), however enjoy
               seeing my sub-optimal play on Chess.com :)
             </Typography>
             <Stack

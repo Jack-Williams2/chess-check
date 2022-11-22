@@ -3,6 +3,8 @@ import ChessWebAPI from 'chess-web-api/src/chess-web-api';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Grid, Typography, Container } from '@mui/material';
 import BestCard from './BestCard';
+import LastCard from './LastCard';
+import RecordCard from './RecordCard'
 
 const ChessApiGrid = () => {
      const [isLoading, setIsLoading] = useState(true);
@@ -37,7 +39,9 @@ const ChessApiGrid = () => {
                                 </Grid> 
                             </Grid> : 
                         <Grid container spacing={4}> 
-                            <BestCard game={rapidStats.best.game} rating={rapidStats.best.rating} date={rapidStats.best.date}/>
+                            <BestCard {...rapidStats.best}/>
+                            <LastCard {...rapidStats.last}/>
+                            <RecordCard {...rapidStats.record}/>
                         </Grid>)}
     </Container>
   )
