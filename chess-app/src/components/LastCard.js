@@ -15,7 +15,7 @@ const LastCard = (props) => {
                       <b>Rating: </b> {props.rating}
                     </Typography>
                     <Typography>
-                      <b>Date: </b> {new Date(props.date * 1000).toLocaleDateString() }
+                      <b>Date: </b> {new Date(props.date * 1000).toLocaleDateString('en-UK', {timeZone: "Australia/Brisbane"}) }
                     </Typography>
                     <Typography>
                       <b>Rating Deviation: </b> {props.rd}
