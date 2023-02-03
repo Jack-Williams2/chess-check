@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
+        working-directory: ./chess-app
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd chess-app
       - run: ls
       - run: yarn install
       - run: yarn run
