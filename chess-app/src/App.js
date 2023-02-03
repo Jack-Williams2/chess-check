@@ -1,5 +1,4 @@
 import './App.css';
-import { Container } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Album from './pages/home';
 
