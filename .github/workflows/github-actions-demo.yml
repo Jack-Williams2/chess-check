@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn config set network-timeout 600000 -g
+        name: Set timeout to 10 minutes.
       - run: yarn install
+        name: Installing node packages.
       - run: yarn run build
+        name: Building Application.
       - run: yarn test
+        name: Running test suite.
