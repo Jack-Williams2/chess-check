@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - run: ls
       - run: yarn install
       - run: yarn run
       - run: yarn test
