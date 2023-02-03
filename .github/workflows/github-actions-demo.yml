@@ -6,7 +6,7 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: ./app
+        working-directory: ./chess-app
     strategy: 
       matrix:
         node_version: [16.x]
