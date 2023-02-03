@@ -35,20 +35,20 @@ describe('<ChessAPiGrid />', () => {
       await act(async () => {
         await render(<ChessApiGrid />);
       });
-      expect(screen.getByText('12/11/2022')).toBeInTheDocument();
+      await expect(screen.getByText('12/11/2022')).toBeInTheDocument();
     });
 
     it('Should display correct last date', async () => {
       await act(async () => {
         await render(<ChessApiGrid />);
       });
-      expect(screen.getByText('22/11/2022')).toBeInTheDocument();
+      await expect(screen.getByText('22/11/2022')).toBeInTheDocument();
     });
 
     it('Should display correct rating', async () => {
       await act(async () => {
         await render(<ChessApiGrid />);
       });
-      expect(screen.getByText('600')).toBeInTheDocument();
+      await expect(screen.getByText('600')).toBeInTheDocument();
     });
   });
