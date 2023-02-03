@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
+test('renders learn react link', async () => {
+  await render(<App />);
   const linkElement = screen.getByText('Chess App');
-  expect(linkElement).toBeInTheDocument();
+  await expect(linkElement).toBeInTheDocument();
 });
